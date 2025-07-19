@@ -17,7 +17,7 @@ const ICON_SIZE = { base: 20, sm: 24 };
 
 const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   const [searchOpen, setSearchOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-md">
